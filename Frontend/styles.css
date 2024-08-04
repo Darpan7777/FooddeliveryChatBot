@@ -1,0 +1,104 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Change the number here to adjust columns */
+    gap: 30px; /* Space between grid items */
+    width: 80%; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.chatbot-container {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the page */
+    right: 20px;  /* Distance from the right side of the page */
+    width: 350px; /* Width of the iframe */
+    height: 430px; /* Height of the iframe */
+    z-index: 1000; /* Ensure it is on top of other elements */
+}
+.chatbot-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Optional: Remove iframe border */
+}
+
+header {
+    background-color: #ff6600;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.welcome, .menu, .location, .about, .contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome h2, .menu h2, .location h2, .about h2, .contact h2 {
+    color: #ff6600;
+}
+
+.menu-category {
+    margin: 20px 0;
+}
+
+.menu-category h3 {
+    color: #66ff66;
+}
+
+.menu-category ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-category ul li {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #ff6600;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    color: #fff;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #66ff66;
+    text-decoration: none;
+    font-weight: bold;
+}
